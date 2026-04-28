@@ -42,8 +42,5 @@ response = client.models.generate_content(
 print(response.text)
 
 
-#Question
-
-
-    st.write(response.text)
+st.write(response.text)
 

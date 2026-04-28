@@ -30,7 +30,7 @@ Dataset context:
 User question:
 {question}
 
-Give a clear, short, business insight answer.
+Give a clear business insight answer.
 """
 
     response = client.models.generate_content(

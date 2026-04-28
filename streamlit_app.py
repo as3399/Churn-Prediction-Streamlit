@@ -18,15 +18,6 @@ st.dataframe(df.head())
 # configure API key
 client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
-response = client.models.generate_content(
-    model="gemini-3-flash-preview",           
-    contents= prompt
-)
-
-print(response.text)
-
-
-#Question
 question = st.text_input("Ask a business Question : ")
 if question:
     # Optional: give dataset context to AI
@@ -42,6 +33,17 @@ if question:
 
     Give a clear business insight answer.
     """
+    
+response = client.models.generate_content(
+    model="gemini-3-flash-preview",           
+    contents= prompt
+)
+
+print(response.text)
+
+
+#Question
+
 
     st.write(response.text)
 

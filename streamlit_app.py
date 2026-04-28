@@ -32,7 +32,7 @@ User question:
 
 Give a clear business insight answer.
 """
- with st.spinner("thinking...."):
+ with st.spinner("Thinking....")
     response = client.models.generate_content(
         model="gemini-3-flash-preview",
         contents=prompt

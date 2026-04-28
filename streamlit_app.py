@@ -16,10 +16,10 @@ st.dataframe(df.head())
 
 
 # configure API key
-client = genai.CLient(api_key=os.getenv("GEMINI_API_KEY"))
+client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
 response = client.models.generate_content(
-    model="emini-3-flash-preview",           
+    model="gemini-3-flash-preview",           
     contents= prompt
 )
 

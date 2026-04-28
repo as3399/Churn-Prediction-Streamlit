@@ -16,9 +16,14 @@ st.dataframe(df.head())
 
 
 # configure API key
-genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
+client = genai.CLient(api_key=os.getenv("GEMINI_API_KEY"))
 
-model = genai.GenerativeModel("gemini-3-flash-preview")
+response = client.models.generate_content(
+    model="emini-3-flash-preview",           
+    contents= prompt
+)
+
+print(response.text)
 
 
 #Question
@@ -38,8 +43,5 @@ if question:
     Give a clear business insight answer.
     """
 
-    response = model.generate_content(prompt)
-
-    st.write("### 🤖 AI Response")
     st.write(response.text)
 

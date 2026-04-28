@@ -26,6 +26,7 @@ You are a data analyst.
 Dataset context:
 - Telecom churn dataset
 - Columns include customer behavior, contract, charges, and churn prediction
+- Generate/calculate metrics
 
 User question:
 {question}

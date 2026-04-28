@@ -20,27 +20,24 @@ client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
 question = st.text_input("Ask a business Question : ")
 if question:
-    # Optional: give dataset context to AI
     prompt = f"""
-    You are a data analyst.
+You are a data analyst.
 
-    Dataset context:
-    - This is a telecom churn dataset
-    - Columns include customer behavior, contract, charges, and churn prediction
+Dataset context:
+- Telecom churn dataset
+- Columns include customer behavior, contract, charges, and churn prediction
 
-    User question:
-    {question}
+User question:
+{question}
 
-    Give a clear business insight answer.
-    """
-    
-response = client.models.generate_content(
-    model="gemini-3-flash-preview",           
-    contents= prompt
-)
+Give a clear, short, business insight answer.
+"""
 
-print(response.text)
+    response = client.models.generate_content(
+        model="gemini-3-flash-preview",
+        contents=prompt
+    )
 
-
-st.write(response.text)
+    st.subheader("💡 AI Insight")
+    st.write(response.text)
 

@@ -23,7 +23,7 @@ Python (Pandas) — Data Cleaning & EDA
         ↓
 SQL Layer — Business KPIs & Behavior Analysis
         ↓
-ML Model — Churn Prediction (XGBoost / Random Forest)
+ML Model — Churn Prediction (LR / XGBoost / Random Forest)
         ↓
 Power BI — Executive Dashboard
         ↓

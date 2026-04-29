@@ -2,7 +2,7 @@
 
 An end-to-end data analytics solution that predicts customer churn, explains the driving factors, and delivers actionable insights through an interactive dashboard and a GenAI-powered Q&A app.
 
----LINK https://churn-prediction-app-lcrr6iugz9nev2f8cujf9w.streamlit.app/
+---Streamlit Link: https://churn-prediction-app-lcrr6iugz9nev2f8cujf9w.streamlit.app/
 
 ## 🚀 Project Overview
 
